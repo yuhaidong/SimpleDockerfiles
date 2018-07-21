@@ -3,7 +3,7 @@ FROM ubuntu:18.10
 #Ingrediten:
 #	jdk-8u162-linux-x64.tar.gz
 
-RUN buildDeps='gcc libc6 make ssh net-tools iputils-ping git curl telnet' \
+RUN buildDeps='gcc libc6 make ssh net-tools iputils-ping git curl telnet vim' \
 	&& apt-get update	\
 	&& apt-get install -y $buildDeps	\
 	&& mkdir -p /opt/java/
